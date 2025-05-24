@@ -1,1 +1,47 @@
 /* write your override styles here */
+body {
+  background: #f0f0f0; 
+  background-image: none;
+}
+/* 2. Clean up the wall */
+#wall {
+  all: unset;
+  width: 980px;
+  height: 622px;
+  margin: 40px auto;
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+/* 3. Remove all graffiti tags */
+.tag-1,
+#tag-2,
+#tag-3,
+#tag-4,
+#tag-5,
+#tag-6,
+#tag-7 {
+  all: unset;
+  display: block;
+  width: 100px;
+  height: 100px;
+  background: #ddd; 
+  margin: 10px;
+}
+/* 4. Remove z-index and other special graffiti styling */
+.tag-1,
+#tag-2,
+#tag-3,
+#tag-4,
+#tag-5,
+#tag-6,
+#tag-7 {
+  z-index: auto !important;
+  background-image: none !important;
+  position: static !important;
+}
+.parent {
+  all: unset;
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+}
